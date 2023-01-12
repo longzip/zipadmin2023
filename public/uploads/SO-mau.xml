@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+ <eExact xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eExact-Schema.xsd">
+<Orders>
+      <Order type="V" partialdelivery="1" confirm="0">
+          <Description>MB-TC-1299</Description>
+		  <YourRef>HD1299</YourRef>
+		  <Resource code="ADMIN_MB"/>
+          <OrderedBy>
+              <Debtor code="123125" type="C" /> 
+          </OrderedBy>
+          <DeliverTo>
+              <Debtor code="123125" type="C" />
+          </DeliverTo>
+          <InvoiceTo>
+              <Debtor code="123125" type="C" />
+          </InvoiceTo>
+          <Warehouse code = "A_MB" />
+          <DeliveryMethod code="DB" type="O" />
+          <Costcenter code="HNI_RC"/>
+		  <OrderLine lineNo="1">
+			  <Item code="PANSY120_V" type="S" />
+			  <Quantity>2</Quantity>
+			  <Price type="S">
+				<Currency code="VND" />
+				<Value>11450000</Value>
+				<VAT code="0" />	
+			  </Price>
+			  <Amount type="S">
+				<Currency code="VND" />
+				<Value>22900000</Value>
+			  </Amount>
+			  <Discount>
+				<Percentage>0</Percentage>
+			  </Discount>
+			  <Delivery>
+			    <Date>2019-01-25</Date>
+			  </Delivery>
+			  <Warehouse code="A_MB" />
+			  <Recipe version="2" />
+			  <Costcenter code="HNI_RC" />
+			  <Resource code="ADMIN_MB"/>
+		  </OrderLine>
+      </Order>
+  </Orders>
+</eExact>

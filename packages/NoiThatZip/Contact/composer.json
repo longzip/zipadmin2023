@@ -1,0 +1,43 @@
+{
+    "name": "noithatzip/contact",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/noithatzip/contact",
+    "keywords": ["Laravel", "Contact"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NoiThatZip\\Contact\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NoiThatZip\\Contact\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NoiThatZip\\Contact\\ContactServiceProvider"
+            ],
+            "aliases": {
+                "Contact": "NoiThatZip\\Contact\\Facades\\Contact"
+            }
+        }
+    }
+}

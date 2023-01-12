@@ -1,0 +1,30 @@
+{
+    "name": "administrator/news",
+    "authors": [
+        {
+            "name": "Chiến Nguyễn",
+            "email": "ndchien150196@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "NoiThatZip\\New\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NoiThatZip\\New\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NoiThatZip\\News\\NewsServiceProvider"
+            ],
+            "aliases": {
+                "New": "NoiThatZip\\News\\Facades\\New"
+            }
+        }
+    }
+}
